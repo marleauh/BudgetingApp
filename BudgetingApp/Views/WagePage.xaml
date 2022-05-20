@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BudgetingApp.Views.WagePage"
+             Title="The Wage Page">
+    <Grid Margin="30,10,30,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.5*" />
+            <ColumnDefinition Width="2.5*" />
+            <ColumnDefinition Width="2.5*" />
+            <ColumnDefinition Width="2.5*" />
+        </Grid.ColumnDefinitions>
+        <Entry Grid.Row="0" Grid.ColumnSpan="4" Placeholder="First Name *" Text="{Binding FirstName, Mode=TwoWay}" FontSize="Medium" />
+        <Entry Grid.Row="1" Grid.ColumnSpan="4" Placeholder="Last Name *" Text="{Binding LastName, Mode=TwoWay}" FontSize="Medium" />
+        <Entry Grid.Row="2" Grid.ColumnSpan="4" Placeholder="Wage *" Text="{Binding FirstName, Mode=TwoWay}" FontSize="Medium" />
+    </Grid>
+</ContentPage>
